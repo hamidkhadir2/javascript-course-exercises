@@ -1,0 +1,19 @@
+{
+  // ============================================================
+  //  Damit F5 in diesem Ordner sofort funktioniert.
+  //  Ab Tag 3 im Kurs: Breakpoint in den Rand klicken, F5 drücken.
+  //  Gestartet wird immer die Datei, die gerade im Editor offen ist.
+  // ============================================================
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Aktuelle Datei mit Node starten",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "cwd": "${fileDirname}",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "javascript-course-exercises",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Übungen zum Kurs Frontend-Programmierung mit JavaScript (Hochschule Hannover)",
+  "scripts": {
+    "test": "node test/run.js"
+  }
+}
