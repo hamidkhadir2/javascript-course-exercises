@@ -4,15 +4,12 @@
 // Ausführen:  node day_01/exercise-1-2.js
 // ============================================================
 
-// 1. Erstelle eine Variable name und weise ihr deinen Namen zu.
+const name = "Hamid";
+let age = 41;
+const result = 8 + 8;
 
 
-// 2. Erstelle eine Variable age und weise ihr dein Alter zu.
-
-
-// 3. Erstelle eine Variable result und weise ihr das Ergebnis
-//    einer Rechnung zu.
-
-
-// 4. Gib jeweils die Variable und ihren Typ aus (typeof).
+console.log(name, typeof name);       // Hamid string
+console.log(age, typeof age);         // 41 number
+console.log(result, typeof result);   // 16 number
 
