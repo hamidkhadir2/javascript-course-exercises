@@ -7,7 +7,13 @@
 // 1. Lege fünf Variablen für ein Kuchenrezept an:
 //    Titel, Backdauer, Mehl, Eier und Milch.
 //    Überlege bei jeder: const oder let?
+const title = "benanenkuchen";
+const bakingMinutes = 50;
+const flourGrams = 125;
+const eggs = 2.75;
+const milkMl = 800;
 
+console.log(`${title}  ${bakingMinutes} Minuten, ${flourGrams} g Mehl, ${eggs} Eier, ${milkMl} ml Milch= guten apetit!`);
 
 // 2. Nutze ein Template Literal, um das Rezept auszugeben.
 
