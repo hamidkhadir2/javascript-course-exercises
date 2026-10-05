@@ -1,14 +1,12 @@
 // ============================================================
-// Übung 1.1 – Node-Konsole und erstes Programm
-// ------------------------------------------------------------
-// Ausführen:  node day_01/exercise-1-1.js
+// Übung 1.1 – Lösung
 // ============================================================
 
-// 1. Gib deinen Namen aus.
+// 1. Name – Text steht in Anführungszeichen
+console.log("Hamid");
 
+// 2. Alter – eine Zahl steht OHNE Anführungszeichen
+console.log(41);
 
-// 2. Gib dein Alter als Zahl aus.
-
-
-// 3. Gib eine einfache Rechnung aus: 8 + 7
-
+// 3. Rechnung
+console.log(8 + 7);       // 15
