@@ -13,12 +13,13 @@ const flourGrams = 125;
 const eggs = 2.75;
 const milkMl = 800;
 
-console.log(`${title}  ${bakingMinutes} Minuten, ${flourGrams} g Mehl, ${eggs} Eier, ${milkMl} ml Milch= guten apetit!`);
 
 // 2. Nutze ein Template Literal, um das Rezept auszugeben.
+console.log(`${title}  ${bakingMinutes} Minuten, ${flourGrams} g Mehl, ${eggs} Eier, ${milkMl} ml Milch= guten apetit!`);
 
 
 // 3. Lege eine Variable für die Anzahl an Portionen an.
+
 
 
 // 4. Passe die Ausgabe des Rezepts an die Portionszahl an.

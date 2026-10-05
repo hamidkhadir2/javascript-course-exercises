@@ -14,9 +14,8 @@ const pricePerTicket = 11.5;
 const screenNumber = 3;
 
 // Der Film wurde in den größeren Saal verlegt.
-screenNumber = 5;
-
-console.log(`Film: ${movietitle}`);
-console.log(Saal ${screenNumber}, Beginn ${startTime} Uhr);
-console.log(`Laufzeit inklusive Werbung: ${runtimeMinutes + adsMinutes} Minuten`);
+//screenNumber = 5;
+console.log(`Film: ${movieTitle}`);
+console.log(`Saal ${screenNumber}, Beginn ${startTime} Uhr`);
+console.log(`Laufzeit inklusive Werbung: ${Number(runtimeMinutes) + adsMinutes} Minuten`);
 console.log(`3 Karten kosten ${pricePerTicket * 3} Euro`);
