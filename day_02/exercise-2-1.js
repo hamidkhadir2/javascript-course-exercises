@@ -8,12 +8,18 @@
 //    zurückgibt. Rufe sie auf und gib das Ergebnis aus.
 //
 //      Hallo, Mia!
-
-
+function greet(name) {
+console.log(`Hallo, ${name}!`);
+}
+greet("Mia");
 // 2. Schreibe eine Funktion scaleAmount(amount, baseServings, desiredServings),
 //    die eine Menge vom Grundrezept auf die gewünschte Portionszahl umrechnet.
 
-
+function scaleAmount(amount, baseServings, desiredServings) {
+  return (amount / baseServings) * desiredServings;}
+  
+const scaledAmount = scaleAmount(500, 4, 6);
+console.log(scaledAmount + " g Mehl");
 // 3. Rechne damit 500 g Mehl von 4 auf 6 Portionen um und gib das
 //    Ergebnis aus:
 //
