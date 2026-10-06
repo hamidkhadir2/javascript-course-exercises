@@ -17,9 +17,14 @@ greet("Mia");
 
 function scaleAmount(amount, baseServings, desiredServings) {
   return (amount / baseServings) * desiredServings;}
-  
-const scaledAmount = scaleAmount(500, 4, 6);
-console.log(scaledAmount + " g Mehl");
+
+console.log(scaleAmount(500, 4, 6) + " g Mehl");
+
+
+let amount = "";
+if (amount) {
+console.log("Bitte Menge eingeben");}
+
 // 3. Rechne damit 500 g Mehl von 4 auf 6 Portionen um und gib das
 //    Ergebnis aus:
 //
@@ -31,9 +36,9 @@ console.log(scaledAmount + " g Mehl");
 // Ausbau: Sage vorher, was die letzten beiden Zeilen ausgeben.
 //         Entferne dann die Kommentarzeichen und prüfe deine Vorhersage.
 //
-// function printGreeting(name) {
-//   console.log(`Hallo, ${name}!`);
-// }
+ function printGreeting(name) {
+  console.log(`Hallo, ${name}!`);}
+ printGreeting("Ana");
 //
 // const result = printGreeting("Ana");
 // console.log(result);

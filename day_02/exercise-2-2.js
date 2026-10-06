@@ -10,14 +10,34 @@
 //      sonst             →  "aufwendig"
 //
 //    Teste mit 10, 20, 45 und 90.
-
+function describeDuration(minutes) {
+  if (minutes < 20) {
+    return "schnell";
+  } else if (minutes <= 45) {
+    return "normal";
+  } else {
+    return "aufwendig";
+  }
+}
+console.log(describeDuration(10));
+console.log(describeDuration(20));
+console.log(describeDuration(45));
+console.log(describeDuration(90 ));
 
 // 2. Schreibe servingsLabel(servings):
 //      1  →  "1 Portion"
 //      4  →  "4 Portionen"
 //
 //    Teste mit 1 und 4.
-
+function servingsLabel(servings) {
+  if (servings === 1) {
+    return "1 Portion";
+  } else {
+    return `${servings} Portionen`;
+  }
+}
+console.log(servingsLabel(1));
+console.log(servingsLabel(4));
 
 // ------------------------------------------------------------
 // 3. Truthy oder falsy?
@@ -47,3 +67,9 @@ checkTruthy(undefined);   // Vorhersage:
 //         true zurückgibt, wenn ein Rezept vegetarisch ist UND
 //         höchstens 20 Minuten dauert.
 // ------------------------------------------------------------
+function isQuickVegetarian(minutes, isVegetarian) {
+  return minutes <= 20 && isVegetarian;
+}
+console.log(isQuickVegetarian(15, true));  // true
+console.log(isQuickVegetarian(25, true));  // false
+console.log(isQuickVegetarian(15, false)); // false
