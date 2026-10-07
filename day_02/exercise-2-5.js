@@ -19,12 +19,12 @@ const ADULT_PRICE = 6;
 const SUNDAY_SURCHARGE = 1;
 
 function normalizeCategory(input) {
-  input.trim();
-  return input.toLowerCase();
+  const trimmedInput = input.trim();
+  return trimmedInput.toLowerCase();
 }
 
 function formatName(name) {
-  return name.toUppercase();
+  return name.toUpperCase();
 }
 
 function getBasePrice(category) {
@@ -35,6 +35,7 @@ function getBasePrice(category) {
       break;
     case "student":
       price = ADULT_PRICE - 2;
+      break;
     case "erwachsen":
       price = ADULT_PRICE;
       break;
@@ -49,7 +50,7 @@ function getTicketPrice(category, weekday) {
   if (basePrice === null) {
     return null;
   }
-  if (weekday = "sonntag") {
+  if (weekday === "sonntag") {
     return basePrice + SUNDAY_SURCHARGE;
   }
   return basePrice;
