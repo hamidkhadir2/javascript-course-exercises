@@ -10,6 +10,16 @@
 //
 //      countChar("Bananenbrot", "n")   →  3
 //      countChar("Bananenbrot", "x")   →  0
+ function countChar(text, char) { 
+  let count = 0;
+  for (let i = 0; i < text.length; i++) {
+    if (text[i] === char) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countChar("hamid khadir", "h")); 
 
 
 // 2. Suche
@@ -20,7 +30,20 @@
 //      findFirstSpace("Chili sin Carne")   →  5
 //      findFirstSpace("Pfannkuchen")       →  -1
 
+ function findFirstSpace(text){
+    for (let i=0;i<text.length;i++)
+        if (text[i]=== " ") return i
+        else if (i===text.length-1) return -1
 
+
+
+        }
+
+
+console.log(findFirstSpace("Chili sin Carne"));
+console.log(findFirstSpace("Pfannkuchen"));
+
+    //#endregion}
 // 3. Transformation
 //    Schreibe initials(name), die die Anfangsbuchstaben aller Wörter
 //    zurückgibt.
@@ -30,7 +53,17 @@
 //
 //    Tipp: Ein Anfangsbuchstabe ist das erste Zeichen - oder ein
 //          Zeichen, vor dem ein Leerzeichen steht.
-
+function initials(name){
+    let result = "";
+    for (let i=0;i<name.length;i++){
+        if (i===0 || name[i-1]===" "){
+            result += name[i];
+        }
+    }
+    return result;
+}
+ console.log(initials("Anna Lena Meyer"));
+ console.log(initials("Tom"));
 
 
 // ------------------------------------------------------------

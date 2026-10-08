@@ -19,10 +19,12 @@ for (let i = 1; i <= 10; i++) {
 //      8 × 125 g = 1000 g Mehl
 //
 //    Lege die 125 als Konstante an, nicht als Zahl mitten im Code.
-for (let portion = 1; portion <= 8; portion++) {
   const flourPerPortion = 125;
+   a = 1222;
+for ( portion = 1; portion <= 8; ) {
+console.log(`a = ${a}`);
   const totalFlour = portion * flourPerPortion;
-  console.log(`${portion} × ${flourPerPortion} g = ${totalFlour} g Mehl`);
+  console.log(`${portion++} × ${flourPerPortion} g = ${totalFlour} g Mehl`);
 }
 
 
