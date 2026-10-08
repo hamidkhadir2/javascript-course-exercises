@@ -7,25 +7,36 @@
 // 1. Schreibe diese vier Funktionen als Arrow Functions - so kurz
 //    wie möglich. Die Aufrufe unten müssen danach dasselbe ausgeben.
 
-function double(x) {
-  return x * 2;
-}
+// function double(x) {
+//   return x * 2;
+// }
 
-function greet(name) {
-  return `Hallo, ${name}!`;
-}
+const double=(x) => x * 2;  
 
-function add(a, b) {
-  return a + b;
-}
 
-function servingsLabel(servings) {
-  if (servings === 1) {
-    return "1 Portion";
-  } else {
-    return `${servings} Portionen`;
-  }
-}
+// function greet(name) {
+//   return `Hallo, ${name}!`;
+// }
+
+const greet = (name) => `Hallo, ${name}!`;
+
+// function add(a, b) {
+//   return a + b;
+// }
+const add =(a, b) => a + b;
+
+
+// function servingsLabel(servings) {
+//   if (servings === 1) {
+//     return "1 Portion";
+//   } else {
+//     return `${servings} Portionen`;
+//   }
+// }
+
+const servingsLabel = (servings) => servings === 1 ? "1 Portion" : `${servings} Portionen`;
+
+
 
 console.log(double(4));          // 8
 console.log(greet("Mia"));       // Hallo, Mia!

@@ -16,12 +16,12 @@ function showRecipe() {
 }
 
 showRecipe();
-console.log(recipe);             // b) Vorhersage:
+console.log(recipe);             // b) Vorhersage:pizza
 
 if (true) {
   const note = "heiß servieren";
 }
-// console.log(note);            // c) Vorhersage:
+//  console.log(note);            // c) Vorhersage:refrence error: note is not defined
 //                                  Entferne die Kommentarzeichen, führe aus
 //                                  und setze sie danach wieder.
 
@@ -33,7 +33,7 @@ function addToTotal(amount) {
 
 addToTotal(5);
 addToTotal(3);
-console.log(total);              // d) Vorhersage:
+console.log(total);              // d) Vorhersage:4
 
 
 // ------------------------------------------------------------
